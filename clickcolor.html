@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>changing colors</p>
+    <button>click to change color</button>
+    <script>
+        var btn = document.querySelector("button")
+        btn.addEventListener("click", changeColor)
+        function random(number){
+            return Math.floor(Math.random()*number);
+        }
+        function changeColor(){
+            btn.style.color = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+        }
+    </script>
+</body>
+</html>
